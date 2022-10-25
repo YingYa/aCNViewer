@@ -51,6 +51,9 @@ RUN \
   tar xzf aCNViewer_DATA.tar.gz && rm aCNViewer_DATA.tar.gz
 
 RUN \
+  chmod 755 aCNViewer_DATA
+
+RUN \
   cd aCNViewer_DATA/bin/samtools-0.1.19 && make clean && make
 
 RUN \
